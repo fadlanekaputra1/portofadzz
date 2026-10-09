@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fadlan Eka Putra — Mahasiswa Teknik Komputer, Web Developer & Visual Thinker dari Makassar. Membangun antarmuka web modern yang presisi dan interaktif.">
+    <title>Fadlan Eka Putra — Web Developer & Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;1,14..32,300;1,14..32,400&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="logo">fadlan<span>.</span></a>
+
+            <nav class="nav-links">
+                <a href="#work"    class="nav-link">Karya</a>
+                <a href="#about"   class="nav-link">Tentang</a>
+                <a href="#skills"  class="nav-link">Skill</a>
+
+                <div class="nav-drop-wrap" id="dropWrap">
+                    <button class="nav-link drop-btn" id="dropBtn">
+                        Modul
+                        <svg viewBox="0 0 10 6" width="10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+                    </button>
+                    <div class="drop-bubble" id="dropBubble">
+                        <span class="drop-label">Tugas Praktikum Web</span>
+                        <a href="modul_3/modul_3.html" class="drop-row">
+                            <span class="drop-num">03</span>
+                            <span class="drop-info"><b>CSS Dasar &amp; Selector</b><small>Form KTP, Menu, Goals</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                        <a href="modul_4/modul_4.html" class="drop-row">
+                            <span class="drop-num">04</span>
+                            <span class="drop-info"><b>CSS Image</b><small>Foto, Transparan, KK</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                        <a href="modul_5/modul_5_tugas2_vertikal.html" class="drop-row">
+                            <span class="drop-num">05</span>
+                            <span class="drop-info"><b>Navigasi &amp; Layout</b><small>Vertikal, Horizontal, Checkout</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                        <a href="modul_6/modul_6.html" class="drop-row">
+                            <span class="drop-num">06</span>
+                            <span class="drop-info"><b>Dropdown &amp; Efek</b><small>Multi-level, Gradient, Header</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="nav-link">Kontak</a>
+            </nav>
+
+            <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                <span>Ngobrol Yuk</span>
+                <svg viewBox="0 0 14 14" width="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===================== TASKBAR ===================== -->
+    <div id="taskbar" role="navigation" aria-label="Floating navigation">
+        <div class="tb-inner">
+            <a href="#hero" class="tb-logo">fadlan<span>.</span></a>
+
+            <nav class="tb-links">
+                <a href="#work"    class="tb-link">Karya</a>
+                <a href="#about"   class="tb-link">Tentang</a>
+                <a href="#skills"  class="tb-link">Skill</a>
+
+                <!-- Taskbar Modul Dropdown -->
+                <div class="tb-drop-wrap" id="tbDropWrap">
+                    <button class="tb-link tb-drop-btn" id="tbDropBtn">
+                        Modul
+                        <svg viewBox="0 0 10 6" width="10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+                    </button>
+                    <div class="tb-drop-panel" id="tbDropPanel">
+                        <span class="drop-label">Tugas Praktikum Web</span>
+                        <a href="modul_3/modul_3.html" class="drop-row">
+                            <span class="drop-num">03</span>
+                            <span class="drop-info"><b>CSS Dasar &amp; Selector</b><small>Form KTP, Menu, Goals</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                        <a href="modul_4/modul_4.html" class="drop-row">
+                            <span class="drop-num">04</span>
+                            <span class="drop-info"><b>CSS Image</b><small>Foto, Transparan, KK</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                        <a href="modul_5/modul_5_tugas2_vertikal.html" class="drop-row">
+                            <span class="drop-num">05</span>
+                            <span class="drop-info"><b>Navigasi &amp; Layout</b><small>Vertikal, Horizontal, Checkout</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                        <a href="modul_6/modul_6.html" class="drop-row">
+                            <span class="drop-num">06</span>
+                            <span class="drop-info"><b>Dropdown &amp; Efek</b><small>Multi-level, Gradient, Header</small></span>
+                            <span class="drop-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="#contact" class="tb-link">Kontak</a>
+            </nav>
+
+            <button class="tb-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+                Ngobrol
+                <svg viewBox="0 0 14 14" width="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+        <div class="hero-grid">
+            <div class="hero-left">
+                <div class="hero-eyebrow">
+                    <span class="dot-live"></span>
+                    <span>Mahasiswa Teknik Komputer · Makassar</span>
+                </div>
+
+                <h1 class="hero-headline">
+                    <span class="line" data-line="1">Fadlan</span>
+                    <span class="line italic-word" data-line="2">Eka</span>
+                    <span class="line" data-line="3">Putra<span class="hero-dot">.</span></span>
+                </h1>
+
+                <p class="hero-nim">NIM / 230210502062</p>
+
+                <p class="hero-sub">
+                    Saya membangun antarmuka web yang presisi,<br>
+                    ekspresif, dan berfokus pada pengalaman manusia.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#work" class="btn-main">Lihat Karya Saya</a>
+                    <a href="#about" class="btn-ghost">Tentang Saya ↓</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="photo-frame">
+                    <img src="foto saya 80s.jpeg" alt="Fadlan Eka Putra" class="hero-photo">
+                    <div class="photo-deco-ring"></div>
+                    <div class="photo-tag">
+                        <span class="tag-icon">✦</span>
+                        <span>Web Dev &amp; Visual Thinker</span>
+                    </div>
+                </div>
+
+                <div class="float-card card-a">
+                    <strong>6</strong>
+                    <small>Modul<br>Praktikum</small>
+                </div>
+                <div class="float-card card-b">
+                    <strong>23'</strong>
+                    <small>Angkatan<br>Aktif</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="marquee-wrap">
+            <div class="marquee-track">
+                <span>HTML5</span><span>✦</span>
+                <span>CSS3</span><span>✦</span>
+                <span>JavaScript</span><span>✦</span>
+                <span>Git & GitHub</span><span>✦</span>
+                <span>UI/UX Design</span><span>✦</span>
+                <span>Layouting</span><span>✦</span>
+                <span>Responsive Web</span><span>✦</span>
+                <span>HTML5</span><span>✦</span>
+                <span>CSS3</span><span>✦</span>
+                <span>JavaScript</span><span>✦</span>
+                <span>Git & GitHub</span><span>✦</span>
+                <span>UI/UX Design</span><span>✦</span>
+                <span>Layouting</span><span>✦</span>
+                <span>Responsive Web</span><span>✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+        <div class="about-wrap">
+            <div class="about-sticky-label">
+                <span>// 01</span>
+                <span>Tentang Saya</span>
+            </div>
+
+            <div class="about-content">
+                <p class="about-big">
+                    Halo! Saya <em>Fadlan</em>, mahasiswa Teknik Komputer 
+                    yang lahir &amp; besar di <em>Makassar</em>.
+                </p>
+                <p class="about-body">
+                    Perjalanan saya di dunia web dimulai dari rasa penasaran 
+                    yang sederhana — <em>"Bagaimana sebuah halaman bisa terlihat 
+                    begitu indah?"</em> Dari pertanyaan itu, saya mulai mendalami 
+                    HTML, CSS, hingga desain antarmuka yang manusiawi.
+                </p>
+                <p class="about-body">
+                    Bagi saya, kode bukan hanya instruksi mesin — ini adalah 
+                    cara untuk menyampaikan ide, emosi, dan cerita kepada siapa 
+                    pun yang membuka layar mereka.
+                </p>
+
+                <div class="about-stats-row">
+                    <div class="astat">
+                        <b>6+</b>
+                        <small>Modul Diselesaikan</small>
+                    </div>
+                    <div class="astat">
+                        <b>2023</b>
+                        <small>Mulai Belajar Web</small>
+                    </div>
+                    <div class="astat">
+                        <b>UNM</b>
+                        <small>Universitas Negeri Makassar</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-photo-col">
+                <div class="about-img-wrap">
+                    <img src="foto3.jpg" alt="Fadlan Eka Putra" class="about-img">
+                    <div class="about-img-label">UNIVERSITAS NEGERI MAKASSAR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-tag">// 02 — Keahlian</div>
+            <h2 class="section-head">Apa yang saya bisa<span class="accent-dot">.</span></h2>
+
+            <div class="skills-list">
+                <div class="skill-row js-reveal">
+                    <span class="skill-num">01</span>
+                    <div class="skill-mid">
+                        <h3>Web Development</h3>
+                        <p>Membangun halaman web semantik & terstruktur dengan HTML5, CSS3, dan JavaScript Vanilla.</p>
+                    </div>
+                    <div class="skill-bar-area">
+                        <div class="sbar-bg"><div class="sbar-fill" data-pct="85"></div></div>
+                        <span>85%</span>
+                    </div>
+                </div>
+                <div class="skill-row js-reveal">
+                    <span class="skill-num">02</span>
+                    <div class="skill-mid">
+                        <h3>CSS Layout & Styling</h3>
+                        <p>Menguasai Float, Flexbox, Grid, Positioning, dan teknik-teknik layouting modern.</p>
+                    </div>
+                    <div class="skill-bar-area">
+                        <div class="sbar-bg"><div class="sbar-fill" data-pct="82"></div></div>
+                        <span>82%</span>
+                    </div>
+                </div>
+                <div class="skill-row js-reveal">
+                    <span class="skill-num">03</span>
+                    <div class="skill-mid">
+                        <h3>UI/UX Design</h3>
+                        <p>Merancang antarmuka yang intuitif, estetik, dan mengutamakan kenyamanan pengguna.</p>
+                    </div>
+                    <div class="skill-bar-area">
+                        <div class="sbar-bg"><div class="sbar-fill" data-pct="74"></div></div>
+                        <span>74%</span>
+                    </div>
+                </div>
+                <div class="skill-row js-reveal">
+                    <span class="skill-num">04</span>
+                    <div class="skill-mid">
+                        <h3>Git & Version Control</h3>
+                        <p>Mengelola source code, tracking perubahan, branching, dan kolaborasi via GitHub.</p>
+                    </div>
+                    <div class="skill-bar-area">
+                        <div class="sbar-bg"><div class="sbar-fill" data-pct="70"></div></div>
+                        <span>70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WORK / PRAKTIKUM ===================== -->
+    <section id="work">
+        <div class="container">
+            <div class="section-tag">// 03 — Praktikum</div>
+            <h2 class="section-head">Tugas yang dikerjakan<span class="accent-dot">.</span></h2>
+            <p class="section-sub">Hasil karya dari 4 modul praktikum Pemrograman Web</p>
+
+            <div class="work-grid">
+                <a href="modul_3/modul_3.html" class="work-card js-reveal" target="_blank">
+                    <div class="wcard-top">
+                        <span class="wcard-num">M3</span>
+                        <span class="wcard-arrow">↗</span>
+                    </div>
+                    <div class="wcard-thumb" style="background: linear-gradient(145deg,#1a1040,#3b2090);">
+                        <div class="thumb-icon">📝</div>
+                    </div>
+                    <div class="wcard-body">
+                        <h3>CSS Dasar & Selector</h3>
+                        <p>Form KTP interaktif, daftar menu makanan-minuman multi-style, dan cerita target karir.</p>
+                        <div class="wcard-tags">
+                            <span>CSS External</span>
+                            <span>Selector</span>
+                            <span>Form</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="modul_4/modul_4.html" class="work-card js-reveal" target="_blank">
+                    <div class="wcard-top">
+                        <span class="wcard-num">M4</span>
+                        <span class="wcard-arrow">↗</span>
+                    </div>
+                    <div class="wcard-thumb" style="background: linear-gradient(145deg,#3d0a1a,#9b2335);">
+                        <div class="thumb-icon">🖼️</div>
+                    </div>
+                    <div class="wcard-body">
+                        <h3>CSS Image & Manipulasi</h3>
+                        <p>Ukuran foto 3x4/4x6/10x15, efek box transparan RGBA, dan desain Kartu Keluarga watermark.</p>
+                        <div class="wcard-tags">
+                            <span>CSS Image</span>
+                            <span>Opacity</span>
+                            <span>Background</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="modul_5/modul_5_tugas2_vertikal.html" class="work-card js-reveal" target="_blank">
+                    <div class="wcard-top">
+                        <span class="wcard-num">M5</span>
+                        <span class="wcard-arrow">↗</span>
+                    </div>
+                    <div class="wcard-thumb" style="background: linear-gradient(145deg,#042030,#085d80);">
+                        <div class="thumb-icon">📐</div>
+                    </div>
+                    <div class="wcard-body">
+                        <h3>Navigasi & Layouting</h3>
+                        <p>Navbar vertikal+horizontal, layout 2 & 3 kolom, dan form checkout barang belanja.</p>
+                        <div class="wcard-tags">
+                            <span>Float</span>
+                            <span>2-Column</span>
+                            <span>Checkout</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="modul_6/modul_6.html" class="work-card js-reveal" target="_blank">
+                    <div class="wcard-top">
+                        <span class="wcard-num">M6</span>
+                        <span class="wcard-arrow">↗</span>
+                    </div>
+                    <div class="wcard-thumb" style="background: linear-gradient(145deg,#052818,#0e6b3d);">
+                        <div class="thumb-icon">✨</div>
+                    </div>
+                    <div class="wcard-body">
+                        <h3>Dropdown & Efek Visual</h3>
+                        <p>Multi-level dropdown, flyout vertikal gradient, dan mockup header institusi kompleks.</p>
+                        <div class="wcard-tags">
+                            <span>Dropdown</span>
+                            <span>Gradient</span>
+                            <span>Multi-level</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+        <div class="contact-wrap">
+            <div class="contact-left">
+                <div class="section-tag light">// 04 — Kontak</div>
+                <h2 class="contact-head">Punya ide?<br>Mari kita<br><em>diskusikan.</em></h2>
+                <p class="contact-sub">Saya terbuka untuk kolaborasi, diskusi proyek, atau sekadar berbagi gagasan seputar web &amp; teknologi.</p>
+
+                <div class="contact-links">
+                    <a href="mailto:fadlanekaputra1@gmail.com" class="clink">
+                        <span class="clink-icon">✉</span>
+                        <span>fadlanekaputra1@gmail.com</span>
+                        <span class="clink-arr">↗</span>
+                    </a>
+                    <a href="https://github.com/fadlanekaputra1" target="_blank" class="clink">
+                        <span class="clink-icon">💻</span>
+                        <span>github.com/fadlanekaputra1</span>
+                        <span class="clink-arr">↗</span>
+                    </a>
+                    <a href="#" class="clink">
+                        <span class="clink-icon">📍</span>
+                        <span>Makassar, Sulawesi Selatan</span>
+                        <span class="clink-arr">↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form class="cf" id="contactForm">
+                    <div class="cf-row">
+                        <div class="cf-group">
+                            <input type="text" id="cfNama" placeholder=" " required>
+                            <label for="cfNama">Nama Kamu</label>
+                        </div>
+                        <div class="cf-group">
+                            <input type="email" id="cfEmail" placeholder=" " required>
+                            <label for="cfEmail">Email</label>
+                        </div>
+                    </div>
+                    <div class="cf-group">
+                        <input type="text" id="cfSubjek" placeholder=" " required>
+                        <label for="cfSubjek">Subjek Pesan</label>
+                    </div>
+                    <div class="cf-group">
+                        <textarea id="cfPesan" rows="5" placeholder=" " required></textarea>
+                        <label for="cfPesan">Pesanmu</label>
+                    </div>
+                    <button type="submit" class="cf-submit" id="cfBtn">
+                        <span id="cfBtnText">Kirim Pesan</span>
+                        <svg viewBox="0 0 14 14" width="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+                    </button>
+                    <div id="cfSuccess" class="cf-success">✦ Pesan terkirim! Saya akan segera membalas.</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="#hero" class="logo">fadlan<span>.</span></a>
+                <p>Mahasiswa Teknik Komputer | UNM | 2026</p>
+            </div>
+
+            <div class="footer-mid">
+                <nav class="footer-nav">
+                    <a href="#work">Karya</a>
+                    <a href="#about">Saya</a>
+                    <a href="#skills">Skill</a>
+                    <a href="#contact">Kontak</a>
+                </nav>
+                <nav class="footer-nav">
+                    <a href="modul_3/modul_3.html">Modul 3</a>
+                    <a href="modul_4/modul_4.html">Modul 4</a>
+                    <a href="modul_5/modul_5_tugas2_vertikal.html">Modul 5</a>
+                    <a href="modul_6/modul_6.html">Modul 6</a>
+                </nav>
+            </div>
+
+            <div class="footer-right">
+                <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                    ↑ Back to top
+                </button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Fadlan Eka Putra | NIM 230210502062</span>
+            <span>Dibuat dengan penuh dedikasi untuk Praktikum Pemrograman Web</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

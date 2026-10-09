@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas Praktikum Modul 4 - CSS Image</title>
+    <!-- Memanggil file CSS eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">Tugas Praktikum Modul 4</h1>
+
+    <!-- Tugas 1 -->
+    <div class="task-section">
+        <h2 class="task-title">1. Pengaturan Ukuran Pas Foto</h2>
+        <p class="description">Menggunakan properti <code>width</code> dan <code>height</code> beserta border untuk mensimulasikan cetak foto ukuran 3x4, 4x6, dan 10x15.</p>
+        <div class="foto-container">
+            <div class="foto-box">
+                <p>Ukuran 3x4</p>
+                <img src="../profil.jpg" alt="Foto 3x4" class="foto-3x4">
+            </div>
+            <div class="foto-box">
+                <p>Ukuran 4x6</p>
+                <img src="../profil.jpg" alt="Foto 4x6" class="foto-4x6">
+            </div>
+            <div class="foto-box">
+                <p>Ukuran 10x15 (Postcard)</p>
+                <img src="../profil.jpg" alt="Foto 10x15" class="foto-10x15">
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <!-- Tugas 2 -->
+    <div class="task-section">
+        <h2 class="task-title">2. Teks di Atas Box Transparan</h2>
+        <div class="background-container">
+            <div class="transparent-box">
+                <h3>Teks di Box Transparan</h3>
+                <p>Background di belakang teks ini menggunakan warna dengan nilai <strong>RGBA</strong> (Red, Green, Blue, Alpha) sehingga menghasilkan efek tembus pandang (transparan) pada box, namun teks yang ada di dalamnya tetap dapat terbaca dengan sangat jelas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tugas 3 -->
+    <div class="task-section">
+        <h2 class="task-title">3. Desain Kartu Keluarga (KK) dengan Background Watermark</h2>
+        <p class="description">Mengimplementasikan properti <code>background-image</code>, <code>background-repeat</code>, dan <code>background-position</code> pada sebuah layout yang menyerupai dokumen Kartu Keluarga.</p>
+        
+        <div class="kk-wrapper">
+            <div class="kk-card">
+                <h1 class="kk-title">KARTU KELUARGA</h1>
+                <h2 class="kk-subtitle">No. 7371101234567890</h2>
+                
+                <div class="kk-info">
+                    <table class="info-table">
+                        <tr><td width="160">Nama Kepala Keluarga</td><td width="10">:</td><td>Fadlan Eka Putra</td></tr>
+                        <tr><td>Alamat</td><td>:</td><td>Jl. Perintis Kemerdekaan No. 10</td></tr>
+                        <tr><td>RT/RW</td><td>:</td><td>001/002</td></tr>
+                        <tr><td>Desa/Kelurahan</td><td>:</td><td>Tamalanrea Indah</td></tr>
+                    </table>
+                    <table class="info-table" style="margin-left: 80px;">
+                        <tr><td width="120">Kecamatan</td><td width="10">:</td><td>Tamalanrea</td></tr>
+                        <tr><td>Kabupaten/Kota</td><td>:</td><td>Makassar</td></tr>
+                        <tr><td>Kode Pos</td><td>:</td><td>90245</td></tr>
+                        <tr><td>Provinsi</td><td>:</td><td>Sulawesi Selatan</td></tr>
+                    </table>
+                </div>
+
+                <table class="kk-table">
+                    <tr>
+                        <th>No</th><th>Nama Lengkap</th><th>NIK</th><th>Jenis Kelamin</th><th>Tempat Lahir</th><th>Tanggal Lahir</th><th>Agama</th>
+                    </tr>
+                    <tr>
+                        <td>1</td><td>Fadlan Eka Putra</td><td>7371101234567891</td><td>Laki-laki</td><td>Makassar</td><td>01-01-2000</td><td>Islam</td>
+                    </tr>
+                    <tr><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>3</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

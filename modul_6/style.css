@@ -1,0 +1,327 @@
+/* =======================================
+   GLOBAL PENGATURAN UMUM
+   ======================================= */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.header-main {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: #d35400;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 8px;
+    margin-top: 50px;
+}
+
+.task-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* =======================================
+   TUGAS 1: DROPDOWN MULTI-LEVEL HITAM
+   ======================================= */
+.nav-task1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #111;
+    display: inline-block;
+    border-radius: 4px;
+}
+.nav-task1 > li {
+    float: left;
+    position: relative;
+}
+.nav-task1 a {
+    display: block;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-task1 > li > a:hover, .nav-task1 .dropdown-1:hover > a {
+    background: #333;
+}
+/* Level 1 Submenu */
+.nav-task1 .sub-1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #222;
+    min-width: 180px;
+    z-index: 10;
+}
+.nav-task1 .dropdown-1:hover .sub-1 {
+    display: block;
+}
+.nav-task1 .sub-1 li {
+    position: relative;
+}
+.nav-task1 .sub-1 a:hover, .nav-task1 .dropdown-2:hover > a {
+    background: #444;
+}
+/* Level 2 Submenu (Kanan) */
+.nav-task1 .sub-2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #111;
+    min-width: 180px;
+}
+.nav-task1 .dropdown-2:hover .sub-2 {
+    display: block;
+}
+
+/* =======================================
+   TUGAS 2: NAVBAR TURQUOISE (BG ART)
+   ======================================= */
+.nav-task2 {
+    background: #3ac5c9; /* Warna pirus sesuai gambar */
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 4px;
+}
+.brand-t2 {
+    font-family: "Brush Script MT", "Comic Sans MS", cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-right: auto; /* Mendorong menu ke kanan */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.menu-t2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu-t2 > li {
+    position: relative;
+}
+.menu-t2 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.menu-t2 > li > a:hover, .menu-t2 .dropdown-t2:hover > a {
+    background: #2b9e9f; /* Warna sedikit lebih gelap saat hover */
+}
+/* Submenu (Dropdown) */
+.sub-t2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #2b9e9f;
+    min-width: 200px;
+    z-index: 10;
+}
+.menu-t2 .dropdown-t2:hover .sub-t2 {
+    display: block;
+}
+.sub-t2 a:hover {
+    background: #1d7b7c;
+}
+
+/* =======================================
+   TUGAS 3: VERTICAL FLYOUT MENU
+   ======================================= */
+.nav-task3 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    border-radius: 5px;
+}
+.nav-task3 > li {
+    position: relative;
+    /* Gradien linear meniru gambar (atas terang, bawah gelap) */
+    background: linear-gradient(to bottom, #7f8fa6, #353b48);
+    border-bottom: 2px solid #2f3640;
+}
+.nav-task3 > li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.nav-task3 > li:last-child {
+    border-radius: 0 0 5px 5px;
+    border-bottom: none;
+}
+.nav-task3 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.nav-task3 > li > a:hover, .nav-task3 .dropdown-t3:hover > a {
+    background: linear-gradient(to bottom, #95a5a6, #2f3640);
+}
+/* Flyout Submenu ke kanan */
+.sub-t3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    background: linear-gradient(to bottom, #718093, #2f3640);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+.dropdown-t3:hover .sub-t3 {
+    display: block;
+}
+
+/* =======================================
+   TUGAS 4: KOMPLEKS HEADER (LAN RI)
+   ======================================= */
+.nav-task4-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topbar-t4 {
+    background-color: #0b2e59; /* Biru tua khas instansi */
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-t4 {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.menu-t4 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.menu-t4 > li {
+    position: relative;
+}
+.menu-t4 a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.menu-t4 > li > a:hover, .menu-t4 .drop-t4:hover > a {
+    background-color: #071f3e;
+}
+
+/* T4 First Level Dropdown */
+.sub-t4 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background: white;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+.sub-t4 a {
+    color: #333;
+    padding: 12px 20px;
+    font-weight: normal;
+    font-size: 13px;
+    border-bottom: 1px solid #f1f2f6;
+}
+.sub-t4 a:hover, .sub-t4 .drop-t4-sub:hover > a {
+    background: #f1f2f6;
+    color: #e67e22;
+}
+.drop-t4:hover .sub-t4 {
+    display: block;
+}
+
+/* T4 Second Level Dropdown */
+.drop-t4-sub {
+    position: relative;
+}
+.sub-t4-sub {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.drop-t4-sub:hover .sub-t4-sub {
+    display: block;
+}
+
+/* Hero Banner Simulation */
+.hero-banner-t4 {
+    /* Gradasi diagonal mensimulasikan gambar banner yang memotong oranye dan pink/merah */
+    background: linear-gradient(135deg, #e67e22 45%, #d35400 45%, #c0392b 100%);
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.hero-text {
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.hero-text .subtitle {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.hero-text .title {
+    font-size: 42px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}

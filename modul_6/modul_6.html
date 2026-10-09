@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 6 - Navigasi dan Dropdown Lanjutan</title>
+    <!-- Memanggil CSS Eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="header-main">
+        <h1>Tugas Praktikum Modul 6</h1>
+        <p>Implementasi CSS Navigasi Lanjutan: Multi-Level Dropdown Menu, Gradien, Hover Efek Kompleks, & Mockup Header Institusi.</p>
+    </div>
+
+    <!-- Tugas 1 -->
+    <h2 class="section-title">1. Navigasi Dropdown Multi-Level (Hitam)</h2>
+    <div class="task-box">
+        <ul class="nav-task1">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Profil</a></li>
+            <li class="dropdown-1">
+                <a href="#">Kategori &nbsp;&#x25BE;</a>
+                <ul class="sub-1">
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">Jquery</a></li>
+                    <!-- Dropdown level ke-2 -->
+                    <li class="dropdown-2">
+                        <a href="#">HTML &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                        <ul class="sub-2">
+                            <li><a href="#">Dasar HTML</a></li>
+                            <li><a href="#">Tag HTML</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+        <div style="clear:both; height:150px;"></div> <!-- Spasi agar dropdown terlihat -->
+    </div>
+
+    <!-- Tugas 2 -->
+    <h2 class="section-title">2. Navbar Turquoise (Bg Art)</h2>
+    <div class="task-box">
+        <div class="nav-task2">
+            <div class="brand-t2">Bg Art</div>
+            <ul class="menu-t2">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Artikel</a></li>
+                <li><a href="#">gambar</a></li>
+                <!-- Dropdown -->
+                <li class="dropdown-t2">
+                    <a href="#">list &nbsp;&#x25BE;</a>
+                    <ul class="sub-t2">
+                        <li><a href="#">Tips Sukses (ul)</a></li>
+                        <li><a href="#">Cara Masak Mie (ol)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Data</a></li>
+                <li><a href="#">Form</a></li>
+                <li><a href="#">Multimedia</a></li>
+            </ul>
+        </div>
+        <div style="clear:both; height:100px;"></div>
+    </div>
+
+    <!-- Tugas 3 -->
+    <h2 class="section-title">3. Vertical Flyout Menu (Gradient)</h2>
+    <div class="task-box">
+        <ul class="nav-task3">
+            <li><a href="#">Home</a></li>
+            <!-- Dropdown Flyout ke samping -->
+            <li class="dropdown-t3">
+                <a href="#">Products &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                <ul class="sub-t3">
+                    <li><a href="#">Product 1</a></li>
+                    <li><a href="#">Product 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div style="clear:both; height:120px;"></div>
+    </div>
+
+    <!-- Tugas 4 -->
+    <h2 class="section-title">4. Header & Multi-Level Dropdown (LAN RI Mockup)</h2>
+    <div class="task-box" style="padding:0; border:1px solid #ccc;">
+        <div class="nav-task4-container">
+            <!-- Navbar Atas -->
+            <div class="topbar-t4">
+                <div class="logo-t4">LAN RI</div>
+                <ul class="menu-t4">
+                    <li class="drop-t4">
+                        <a href="#">PELATIHAN &#x25BE;</a>
+                        <!-- Submenu 1 -->
+                        <ul class="sub-t4">
+                            <li class="drop-t4-sub">
+                                <a href="#">Pelatihan Kepemimpinan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo;</a>
+                                <!-- Submenu 2 -->
+                                <ul class="sub-t4-sub">
+                                    <li><a href="#">PKN Tingkat I</a></li>
+                                    <li><a href="#">PKN Tingkat II</a></li>
+                                    <li><a href="#">PKA</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pelatihan Dasar CPNS</a></li>
+                            <li><a href="#">Pelatihan Sosial Kultural</a></li>
+                            <li><a href="#">Pelatihan Teknis</a></li>
+                            <li><a href="#">Pelatihan Fungsional</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">KNOWLEDGE-BASE &#x25BE;</a></li>
+                    <li><a href="#">TENTANG KAMI &#x25BE;</a></li>
+                    <li><a href="#">ENGLISH (EN) &#x25BE;</a></li>
+                </ul>
+            </div>
+            
+            <!-- Banner / Hero Section Bawah Navigasi -->
+            <div class="hero-banner-t4">
+                <div class="hero-text">
+                    <p class="subtitle">BERKOMITMEN MEWUJUDKAN ASN UNGGUL</p>
+                    <h1 class="title">Pelatihan Berbasis Industri 4.0</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

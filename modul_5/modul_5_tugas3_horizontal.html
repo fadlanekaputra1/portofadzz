@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 5 - Tugas 3 (Navigasi Horizontal & Checkout)</title>
+    <!-- Memanggil CSS Eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Modul 5: Navigasi Horizontal & Form Checkout</h1>
+        <p>Implementasi Navigasi Horizontal dipadukan dengan Layout Checkout 2 Kolom.</p>
+    </div>
+
+    <!-- Navigasi Horizontal -->
+    <ul class="nav-horizontal">
+        <li><a href="#">Beranda Toko</a></li>
+        <li><a href="#">Semua Kategori</a></li>
+        <li><a href="#">Promo Hari Ini</a></li>
+        <li><a href="#">Akun Saya</a></li>
+        <!-- Menu Checkout di kanan -->
+        <li style="float:right"><a class="active" href="#">Checkout Keranjang</a></li>
+    </ul>
+
+    <!-- Layout 2 Kolom (Kiri: Konten Form Checkout, Kanan: Sidebar Ringkasan) -->
+    <h2 class="section-title">Halaman Checkout Barang (Layout 2 Kolom)</h2>
+    <div class="wrapper-2col" style="background-color: transparent; box-shadow: none; padding: 0;">
+        
+        <div class="konten-utama-kiri">
+            <h3>Informasi Tagihan & Pengiriman</h3>
+            <div class="form-checkout">
+                <form>
+                    <label>Nama Lengkap Penerima</label>
+                    <input type="text" placeholder="Masukkan nama lengkap sesuai KTP" required>
+                    
+                    <label>Alamat Email</label>
+                    <input type="email" placeholder="contoh: budi@gmail.com" required>
+                    
+                    <label>Nomor HP / WhatsApp</label>
+                    <input type="text" placeholder="0812xxxxxxxx" required>
+                    
+                    <label>Alamat Lengkap Pengiriman</label>
+                    <textarea rows="4" placeholder="Nama Jalan, Gedung, RT/RW, Kelurahan, Kecamatan, Kota" required></textarea>
+                    
+                    <label>Pilih Metode Pembayaran</label>
+                    <select>
+                        <option>Transfer Bank (BCA/Mandiri/BNI)</option>
+                        <option>E-Wallet (GoPay / OVO / Dana)</option>
+                        <option>COD (Bayar Tunai di Tempat)</option>
+                        <option>Kartu Kredit / Debit</option>
+                    </select>
+                    
+                    <button type="button" class="btn-checkout">Proses Pesanan Sekarang</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="sidebar-kanan">
+            <h3>Ringkasan Belanja</h3>
+            <div class="ringkasan-item">
+                <p>1x Laptop ASUS ROG Strix <span>Rp 15.000.000</span></p>
+                <p>1x Mouse Gaming Wireless <span>Rp 200.000</span></p>
+                <p>1x Mousepad RGB <span>Rp 50.000</span></p>
+                <hr style="border: 1px solid #dcdde1; margin: 15px 0;">
+                <p>Subtotal <span>Rp 15.250.000</span></p>
+                <p>Ongkos Kirim <span>Rp 50.000</span></p>
+                <p>Pajak / Biaya Layanan <span>Rp 5.000</span></p>
+                <hr style="border: 1px solid #dcdde1; margin: 15px 0;">
+                <p style="font-size: 18px; color: #e1b12c;"><strong>Total Tagihan: <span style="float:right">Rp 15.305.000</span></strong></p>
+            </div>
+        </div>
+        
+        <!-- Membersihkan efek float -->
+        <div style="clear:both;"></div>
+    </div>
+
+    <!-- Penutup Footer -->
+    <div class="footer">
+        &copy; 2026 Tugas Modul 5 Pemrograman Web - Teknik Komputer
+    </div>
+
+</body>
+</html>
