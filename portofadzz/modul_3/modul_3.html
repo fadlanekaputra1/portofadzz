@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas Praktikum Modul 3</title>
+    <!-- Memanggil file CSS eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1 class="main-title">Tugas Praktikum Modul 3</h1>
+
+    <!-- Tugas 1 -->
+    <div class="task-section">
+        <h2 class="task-title">1. Form Pengisian KTP</h2>
+        <div class="ktp-form-container">
+            <div class="ktp-header">PROVINSI SULAWESI SELATAN<br>KOTA MAKASSAR</div>
+            <form>
+                <div class="form-group">
+                    <label>NIK</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="nik" class="input-nik">
+                </div>
+                <div class="form-group">
+                    <label>Nama</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="nama">
+                </div>
+                <div class="form-group">
+                    <label>Tempat/Tgl Lahir</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="ttl">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <span class="colon">:</span>
+                    <input type="radio" name="jk" value="Laki-laki"> LAKI-LAKI &nbsp;&nbsp;&nbsp;
+                    <label class="label-short">Gol. Darah :</label>
+                    <input type="text" name="goldar" class="input-short">
+                </div>
+                <div class="form-group">
+                    <label>Alamat</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="alamat">
+                </div>
+                <div class="form-group indent-label">
+                    <label>RT/RW</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="rtrw" class="input-short">
+                </div>
+                <div class="form-group indent-label">
+                    <label>Kel/Desa</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="keldesa">
+                </div>
+                <div class="form-group indent-label">
+                    <label>Kecamatan</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="kecamatan">
+                </div>
+                <div class="form-group">
+                    <label>Agama</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="agama">
+                </div>
+                <div class="form-group">
+                    <label>Status Perkawinan</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="status">
+                </div>
+                <div class="form-group">
+                    <label>Pekerjaan</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="pekerjaan">
+                </div>
+                <div class="form-group">
+                    <label>Kewarganegaraan</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="warga">
+                </div>
+                <div class="form-group">
+                    <label>Berlaku Hingga</label>
+                    <span class="colon">:</span>
+                    <input type="text" name="berlaku" value="SEUMUR HIDUP" readonly>
+                </div>
+                <div style="text-align: right; margin-top: 15px;">
+                    <button type="button" class="btn-submit">Simpan Data</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tugas 2 -->
+    <div class="task-section">
+        <h2 class="task-title">2. Layout Daftar Makanan dan Minuman</h2>
+        <div class="menu-container">
+            <!-- Layout Kiri -->
+            <div id="makanan-layout" class="menu-layout">
+                <h3 class="menu-header">Menu Makanan</h3>
+                <ul>
+                    <li class="makanan-1">Nasi Goreng Spesial</li>
+                    <li class="makanan-2">Mie Goreng Seafood</li>
+                    <li class="makanan-3">Ayam Bakar Madu</li>
+                    <li class="makanan-4">Sate Ayam Ponorogo</li>
+                </ul>
+            </div>
+            
+            <!-- Layout Kanan -->
+            <div id="minuman-layout" class="menu-layout">
+                <h3 class="menu-header">Menu Minuman</h3>
+                <ul>
+                    <li class="minuman-1">Es Teh Manis</li>
+                    <li class="minuman-2">Jus Alpukat Segar</li>
+                    <li class="minuman-3">Kopi Susu Dingin</li>
+                    <li class="minuman-4">Lemon Tea</li>
+                </ul>
+            </div>
+            <!-- Clear float agar container menyesuaikan tinggi -->
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+
+    <!-- Tugas 3 -->
+    <div class="task-section">
+        <h2 class="task-title">3. Cerita Pencapaian 2-3 Tahun Kedepan</h2>
+        <div class="goals-container">
+            <p id="goal-pembuka">Dalam kurun waktu dua hingga tiga tahun ke depan, saya memiliki beberapa target penting yang ingin saya capai, baik dalam pengembangan karir profesional maupun dalam kehidupan pribadi saya.</p>
+            
+            <p class="goal-highlight">Pencapaian pertama yang menjadi fokus saya adalah menjadi seorang <span class="text-bold">Fullstack Web Developer</span> yang handal. Saya ingin menguasai berbagai teknologi modern dan telah berhasil menyelesaikan serta mendeploy berbagai proyek berskala industri untuk klien.</p>
+            
+            <p class="goal-normal">Pencapaian kedua, saya berencana untuk merintis startup digital atau agensi kreatif kecil bersama dengan rekan-rekan sevisi. Tujuannya adalah untuk membantu berbagai UMKM di Indonesia agar dapat bertransformasi dan go-digital dengan website yang profesional.</p>
+            
+            <p id="goal-penutup"><i>Semoga dengan konsistensi, pembelajaran tanpa henti, dan kerja keras, semua impian ini dapat terwujud pada waktunya.</i></p>
+        </div>
+    </div>
+
+</body>
+</html>

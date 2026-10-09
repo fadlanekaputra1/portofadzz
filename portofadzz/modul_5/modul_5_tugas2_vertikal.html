@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Modul 5 - Tugas 2 (Navigasi Vertikal & Layout)</title>
+    <!-- Memanggil CSS Eksternal -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Modul 5: Navigasi Vertikal & Layout</h1>
+        <p>Implementasi Navigasi Vertikal dipadukan dengan Layout 2 Kolom dan 3 Kolom.</p>
+    </div>
+
+    <!-- Layout 2 Kolom -->
+    <h2 class="section-title">Contoh Layout 2 Kolom</h2>
+    <div class="wrapper-2col">
+        <div class="sidebar-kiri">
+            <!-- Navigasi Vertikal -->
+            <ul class="nav-vertikal">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profil">Profil Saya</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+        <div class="konten-utama-2col">
+            <h3>Konten Utama (Layout 2 Kolom)</h3>
+            <p>Di sini adalah area konten utama. Di sebelah kiri terdapat sidebar yang difungsikan sebagai navigasi vertikal.</p>
+            <p>Layout 2 kolom ini dibuat menggunakan properti <code>float: left</code> pada kedua elemen (sidebar dan konten) agar bisa berdampingan sejajar, di mana sidebar diatur lebarnya (misal 25%) dan konten menggunakan sisa lebar layar (71%).</p>
+        </div>
+        <!-- Membersihkan efek float -->
+        <div style="clear:both;"></div>
+    </div>
+
+    <!-- Layout 3 Kolom -->
+    <h2 class="section-title">Contoh Layout 3 Kolom</h2>
+    <div class="wrapper-3col">
+        <div class="sidebar-kiri-3col">
+            <!-- Navigasi Vertikal -->
+            <ul class="nav-vertikal">
+                <li><a href="#dashboard">Dashboard Admin</a></li>
+                <li><a href="#pesanan">Daftar Pesanan</a></li>
+                <li><a href="#produk">Manajemen Produk</a></li>
+                <li><a href="#laporan">Laporan</a></li>
+                <li><a href="#pengaturan">Pengaturan</a></li>
+            </ul>
+        </div>
+        <div class="konten-tengah-3col">
+            <h3>Konten Tengah (Layout 3 Kolom)</h3>
+            <p>Area ini merupakan area baca / area konten utama yang posisinya berada tepat di tengah, diapit oleh dua sidebar (kiri dan kanan).</p>
+            <p>Layout 3 kolom ini sangat populer dan sering digunakan untuk website kompleks seperti Dashboard Administrator, Portal Berita, maupun Forum.</p>
+        </div>
+        <div class="sidebar-kanan-3col">
+            <h3>Info Tambahan</h3>
+            <p>Ini adalah sidebar kanan. Bisa diisi dengan <i>banner iklan</i>, daftar artikel terkait, kalender, profil <i>user</i>, atau *widget* tambahan lainnya.</p>
+        </div>
+        <!-- Membersihkan efek float -->
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Tugas Modul 5 Pemrograman Web - Teknik Komputer
+    </div>
+
+</body>
+</html>

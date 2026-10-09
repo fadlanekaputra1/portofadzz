@@ -1,0 +1,260 @@
+/* =========================================
+   PENGATURAN UMUM
+   ========================================= */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f1f2f6; /* Warna abu-abu terang */
+    margin: 0;
+    padding: 20px 50px;
+    color: #2f3640;
+}
+
+.header {
+    background-color: #2f3640; /* Warna gelap navy */
+    color: #f5f6fa;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.header h1 {
+    margin: 0 0 10px 0;
+}
+
+.header p {
+    margin: 0;
+    font-size: 15px;
+    color: #dcdde1;
+}
+
+.section-title {
+    margin-top: 35px;
+    border-bottom: 2px solid #0097e6; /* Garis bawah biru */
+    padding-bottom: 8px;
+    color: #2f3640;
+}
+
+.footer {
+    background-color: #2f3640;
+    color: #f5f6fa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 0 0 8px 8px;
+    font-size: 14px;
+}
+
+/* =========================================
+   NAVIGASI VERTIKAL (MODUL 5)
+   ========================================= */
+.nav-vertikal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #353b48;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.nav-vertikal li a {
+    display: block;
+    color: #f5f6fa;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #2f3640;
+}
+
+.nav-vertikal li:last-child a {
+    border-bottom: none;
+}
+
+.nav-vertikal li a:hover {
+    background-color: #0097e6; /* Warna biru saat di-hover */
+    color: white;
+}
+
+/* =========================================
+   NAVIGASI HORIZONTAL (MODUL 5)
+   ========================================= */
+.nav-horizontal {
+    list-style-type: none;
+    margin: 0 0 30px 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #353b48;
+}
+
+.nav-horizontal li {
+    float: left;
+}
+
+.nav-horizontal li a {
+    display: block;
+    color: #f5f6fa;
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 1px solid #2f3640;
+}
+
+.nav-horizontal li a:hover {
+    background-color: #111;
+}
+
+/* Navigasi khusus Checkout (Aktif) */
+.nav-horizontal li a.active {
+    background-color: #e1b12c; /* Warna kuning khas tombol checkout */
+    color: #111;
+}
+
+/* =========================================
+   LAYOUT 2 KOLOM
+   ========================================= */
+.wrapper-2col {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-kiri {
+    float: left;
+    width: 25%;
+    /* Tidak perlu background karena list nav sudah ada bg-nya */
+}
+
+.konten-utama-2col {
+    float: left;
+    width: 71%;
+    margin-left: 4%;
+    line-height: 1.6;
+}
+
+/* =========================================
+   LAYOUT 3 KOLOM
+   ========================================= */
+.wrapper-3col {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-kiri-3col {
+    float: left;
+    width: 20%;
+}
+
+.konten-tengah-3col {
+    float: left;
+    width: 50%;
+    margin: 0 5%;
+    line-height: 1.6;
+}
+
+.sidebar-kanan-3col {
+    float: left;
+    width: 20%;
+    background-color: #f5f6fa;
+    padding: 15px;
+    box-sizing: border-box;
+    border-left: 3px solid #dcdde1;
+    border-radius: 4px;
+}
+
+/* =========================================
+   LAYOUT 2 KOLOM UNTUK FORM CHECKOUT 
+   ========================================= */
+.konten-utama-kiri {
+    float: left;
+    width: 62%;
+    background-color: white;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-kanan {
+    float: left;
+    width: 34%;
+    margin-left: 4%;
+    background-color: #2f3640; /* Background gelap khas ringkasan keranjang */
+    color: white;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-kanan h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #718093;
+    padding-bottom: 10px;
+    color: #fbc531;
+}
+
+/* Kustomisasi Form Checkout */
+.form-checkout {
+    padding: 10px 0;
+}
+
+.form-checkout label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.form-checkout input[type="text"],
+.form-checkout input[type="email"],
+.form-checkout textarea,
+.form-checkout select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 22px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+    background-color: #fdfefe;
+}
+
+.form-checkout input:focus, .form-checkout textarea:focus {
+    outline: none;
+    border-color: #0097e6;
+    box-shadow: 0 0 5px rgba(0, 151, 230, 0.3);
+}
+
+.btn-checkout {
+    background-color: #44bd32;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-checkout:hover {
+    background-color: #4cd137;
+    box-shadow: 0 4px 8px rgba(76, 209, 55, 0.4);
+}
+
+/* Ringkasan Belanja Items */
+.ringkasan-item p {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.ringkasan-item span {
+    float: right;
+    font-weight: bold;
+}

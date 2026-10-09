@@ -1,0 +1,199 @@
+/* =========================================
+   PENGATURAN UMUM
+   ========================================= */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.task-section {
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task-title {
+    color: #2980b9;
+    border-left: 5px solid #2980b9;
+    padding-left: 10px;
+}
+
+/* =========================================
+   TUGAS 1: KTP FORM STYLES
+   ========================================= */
+.ktp-form-container {
+    border: 2px solid #34495e;
+    padding: 20px;
+    background-color: #cddff1;
+    width: 600px;
+    border-radius: 8px;
+    margin: 0 auto; /* Posisi di tengah */
+}
+
+.ktp-header {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.indent-label label {
+    padding-left: 30px;
+    width: 110px;
+}
+
+.label-short {
+    display: inline-block;
+    width: auto !important;
+}
+
+.colon {
+    display: inline-block;
+    width: 15px;
+}
+
+.form-group input[type="text"] {
+    padding: 3px 5px;
+    border: 1px solid #7f8c8d;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 250px;
+}
+
+.form-group input.input-nik {
+    font-size: 18px;
+    letter-spacing: 2px;
+    width: 300px;
+}
+
+.form-group input.input-short {
+    width: 50px;
+}
+
+.btn-submit {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background-color: #219150;
+}
+
+/* =========================================
+   TUGAS 2: DAFTAR MENU LAYOUT STYLES
+   ========================================= */
+.menu-container {
+    width: 100%;
+}
+
+.menu-layout {
+    width: 45%;
+    float: left;
+    margin-right: 2%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px dashed #7f8c8d;
+    background-color: #fdfefe;
+    border-radius: 10px;
+}
+
+.menu-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: #8e44ad;
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 10px;
+}
+
+/* Karakteristik unik tiap item menu Makanan */
+.makanan-1 { font-family: "Courier New", Courier, monospace; color: #c0392b; font-size: 18px; font-weight: bold; }
+.makanan-2 { font-family: "Georgia", serif; color: #d35400; font-size: 16px; font-style: italic; }
+.makanan-3 { font-family: "Impact", Charcoal, sans-serif; color: #e67e22; font-size: 20px; letter-spacing: 1px; }
+.makanan-4 { font-family: "Tahoma", Geneva, sans-serif; color: #8e44ad; font-size: 17px; text-decoration: underline; }
+
+/* Karakteristik unik tiap item menu Minuman */
+.minuman-1 { font-family: "Trebuchet MS", Helvetica, sans-serif; color: #2980b9; font-size: 18px; letter-spacing: 2px; }
+.minuman-2 { font-family: "Verdana", Geneva, sans-serif; color: #16a085; font-size: 16px; font-weight: bolder; }
+.minuman-3 { font-family: "Arial", Helvetica, sans-serif; color: #2c3e50; font-size: 22px; text-transform: uppercase; }
+.minuman-4 { font-family: "Comic Sans MS", cursive; color: #f39c12; font-size: 18px; }
+
+/* =========================================
+   TUGAS 3: CERITA GOALS STYLES
+   ========================================= */
+.goals-container {
+    padding: 20px 30px;
+    border-left: 6px solid #f39c12;
+    background-color: #fff9e6;
+    border-radius: 0 8px 8px 0;
+}
+
+#goal-pembuka {
+    font-size: 18px;
+    color: #34495e;
+    text-indent: 40px; /* Indentasi awal paragraf */
+    line-height: 1.6;
+}
+
+.goal-highlight {
+    font-size: 19px;
+    color: #c0392b;
+    line-height: 1.6;
+    background-color: #fdebd0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5b041;
+}
+
+.text-bold {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.goal-normal {
+    font-size: 17px;
+    color: #27ae60;
+    text-align: justify; /* Teks rata kiri kanan */
+    line-height: 1.6;
+}
+
+#goal-penutup {
+    text-align: center;
+    color: #8e44ad;
+    margin-top: 30px;
+    font-size: 19px;
+    text-decoration: underline;
+}
